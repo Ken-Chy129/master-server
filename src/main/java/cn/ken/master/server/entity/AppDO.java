@@ -9,9 +9,9 @@ import lombok.EqualsAndHashCode;
  * @author Ken-Chy129
  * @date 2024/8/28
  */
-@TableName("master_app")
 @Data
 @EqualsAndHashCode(callSuper = true)
+@TableName("master_app")
 public class AppDO extends BaseDO {
 
     private String name;

@@ -10,7 +10,7 @@ import java.util.Date;
 public class BaseDO {
 
     @TableId(type = IdType.AUTO)
-    private Integer id;
+    private Long id;
 
     private Date gmtCreate;
 
