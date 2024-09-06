@@ -14,13 +14,28 @@ import lombok.EqualsAndHashCode;
 @TableName("master_app")
 public class AppDO extends BaseDO {
 
+    /**
+     * 应用名称
+     */
     private String name;
 
+    /**
+     * 应用描述
+     */
     private String description;
 
+    /**
+     * 应用ip地址
+     */
     private String ipAddress;
 
+    /**
+     * 应用端口号
+     */
     private Integer port;
 
+    /**
+     * 应用状态
+     */
     private Integer status;
 }
