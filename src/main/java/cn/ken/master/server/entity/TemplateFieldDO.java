@@ -1,11 +1,13 @@
 package cn.ken.master.server.entity;
 
 import cn.ken.master.server.common.BaseDO;
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 @Data
 @EqualsAndHashCode(callSuper = false)
+@TableName("master_template_field")
 public class TemplateFieldDO extends BaseDO {
 
     /**

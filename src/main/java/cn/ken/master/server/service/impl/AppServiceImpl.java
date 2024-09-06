@@ -7,6 +7,8 @@ import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Slf4j
 @Service
 public class AppServiceImpl implements AppService {
@@ -17,5 +19,10 @@ public class AppServiceImpl implements AppService {
     @Override
     public void insert(AppDO appDO) {
         appMapper.insert(appDO);
+    }
+
+    @Override
+    public List<AppDO> selectAll() {
+        return List.of();
     }
 }

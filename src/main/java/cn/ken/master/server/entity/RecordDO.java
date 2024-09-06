@@ -63,7 +63,7 @@ public class RecordDO extends BaseDO {
     /**
      * 场景模板id
      */
-    private Long sceneId;
+    private Long templateId;
 
     /**
      * 归属父变更id（用于场景模板）
