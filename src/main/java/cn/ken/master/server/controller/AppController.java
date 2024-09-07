@@ -5,6 +5,8 @@ import cn.ken.master.server.service.AppService;
 import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * 应用控制器
  * @author Ken-Chy129
@@ -18,8 +20,8 @@ public class AppController {
     private AppService appService;
 
     @GetMapping("list")
-    public void list() {
-
+    public List<AppDO> list() {
+        return appService.selectAll();
     }
 
     @PostMapping("insert")

@@ -3,6 +3,7 @@ package cn.ken.master.server.service.impl;
 import cn.ken.master.server.entity.AppDO;
 import cn.ken.master.server.mapper.AppMapper;
 import cn.ken.master.server.service.AppService;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -23,6 +24,6 @@ public class AppServiceImpl implements AppService {
 
     @Override
     public List<AppDO> selectAll() {
-        return List.of();
+        return appMapper.selectList(new QueryWrapper<>());
     }
 }
