@@ -1,5 +1,6 @@
 package cn.ken.master.server.service.impl;
 
+import cn.ken.master.core.model.Result;
 import cn.ken.master.server.entity.AppDO;
 import cn.ken.master.server.mapper.AppMapper;
 import cn.ken.master.server.service.AppService;
@@ -23,7 +24,8 @@ public class AppServiceImpl implements AppService {
     }
 
     @Override
-    public List<AppDO> selectAll() {
-        return appMapper.selectList(new QueryWrapper<>());
+    public Result<List<AppDO>> selectAll() {
+        List<AppDO> appDOList = appMapper.selectList(new QueryWrapper<>());
+        return Result.success(appDOList);
     }
 }

@@ -38,6 +38,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>cn.ken-chy129</groupId>
+            <artifactId>master-core</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
             <version>3.3.2</version>

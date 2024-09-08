@@ -1,5 +1,6 @@
 package cn.ken.master.server.controller;
 
+import cn.ken.master.core.model.Result;
 import cn.ken.master.server.entity.AppDO;
 import cn.ken.master.server.service.AppService;
 import jakarta.annotation.Resource;
@@ -20,7 +21,7 @@ public class AppController {
     private AppService appService;
 
     @GetMapping("list")
-    public List<AppDO> list() {
+    public Result<List<AppDO>> list() {
         return appService.selectAll();
     }
 
